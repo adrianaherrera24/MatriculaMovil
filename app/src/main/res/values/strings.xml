@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MatriculaApp</string>
+    <!-- Strings related to login -->
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+<!--
+    <string-array name="carreras">
+        <item>EIF Ingenieria en Sistemas</item>
+        <item>ADM Administracion</item>
+        <item>AGR Ingenieria Agricola</item>
+        <item>RRI Relaciones Internacionales</item>
+        <item>ILE Ingles</item>
+    </string-array> -->
+
+    <string-array name="ciclos">
+    <item>1</item>
+    <item>2</item>
+    </string-array>
+
+</resources>
