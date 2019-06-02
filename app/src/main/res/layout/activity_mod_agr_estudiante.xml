@@ -76,7 +76,7 @@
                 android:layout_height="60dp"
                 android:ems="10"
                 android:hint="Teléfono"
-                android:inputType="textPersonName" />
+                android:inputType="number" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
