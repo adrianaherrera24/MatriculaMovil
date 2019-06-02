@@ -146,18 +146,6 @@ public class AdmCursoActivity extends AppCompatActivity
             final int deletedIndex = viewHolder.getAdapterPosition();
             // remove the item from recyclerView
             mAdapter.removeItem(viewHolder.getAdapterPosition());
-
-            // showing snack bar with Undo option
-            Snackbar snackbar = Snackbar.make(coordinatorLayout, name + " removido!", Snackbar.LENGTH_LONG);
-            snackbar.setAction("UNDO", new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    // undo is selected, restore the deleted item from adapter
-                    mAdapter.restoreItem(deletedIndex);
-                }
-            });
-            snackbar.setActionTextColor(Color.YELLOW);
-            snackbar.show();
         } else {
             /// SWIPED DE EDITAR
             Curso aux = mAdapter.getSwipedItem(viewHolder.getAdapterPosition());
@@ -284,12 +272,12 @@ public class AdmCursoActivity extends AppCompatActivity
             //Se actualiza el recycler view
             try {
                 Gson gson = new Gson();
-                ArrayList<Curso> profesorArrayList = (ArrayList<Curso>) gson.fromJson(s,
+                ArrayList<Curso> cursoArrayList = (ArrayList<Curso>) gson.fromJson(s,
                         new TypeToken<ArrayList<Curso>>() {
                         }.getType());
 
 
-                listaCursos = profesorArrayList;
+                listaCursos = cursoArrayList;
                 mAdapter = new CursoAdapter(listaCursos, AdmCursoActivity.this);
                 coordinatorLayout = findViewById(R.id.coordinator_layout_cur);
 
@@ -298,9 +286,6 @@ public class AdmCursoActivity extends AppCompatActivity
                 mRecyclerView.setItemAnimator(new DefaultItemAnimator());
                 mRecyclerView.addItemDecoration(new DividerItemDecoration(AdmCursoActivity.this, DividerItemDecoration.VERTICAL));
                 mRecyclerView.setAdapter(mAdapter);
-
-
-                //txtView.setText(ClienteList.toString());
 
             }catch (Exception e) {
                 e.printStackTrace();

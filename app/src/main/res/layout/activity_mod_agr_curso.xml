@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextInputEditText
+            <EditText
                 android:id="@+id/codigoCurso"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextInputEditText
+            <EditText
                 android:id="@+id/nombreCurso"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextInputEditText
+            <EditText
                 android:id="@+id/creditosCurso"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -82,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextInputEditText
+            <EditText
                 android:id="@+id/horasCurso"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -95,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextInputEditText
+            <EditText
                 android:id="@+id/carreraCurso"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -108,12 +108,12 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextInputEditText
+            <EditText
                 android:id="@+id/ciclosCurso"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:ems="10"
-                android:hint="Año"
+                android:hint="Ciclo"
                 android:inputType="number" />
         </android.support.design.widget.TextInputLayout>
 
@@ -122,13 +122,13 @@
             android:layout_width="match_parent"
             android:layout_height="90dp">
 
-            <TextInputEditText
+            <EditText
                 android:id="@+id/annoCurso"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:ems="10"
                 android:hint="Año"
-                android:inputType="number" />
+                android:inputType="textPersonName" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.FloatingActionButton

@@ -43,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp">
             <!-- Espacio de texto -->
-            <TextInputEditText
+            <EditText
                 android:id="@+id/codigoCarrera"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -56,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp">
             <!-- Espacio de texto -->
-            <TextInputEditText
+            <EditText
                 android:id="@+id/nombreCarrera"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp">
             <!-- Espacio de texto -->
-            <TextInputEditText
+            <EditText
                 android:id="@+id/tituloCarrera"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
